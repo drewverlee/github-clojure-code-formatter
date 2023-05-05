@@ -52,3 +52,4 @@ jobs:
         run: clojure -Sdeps '{:deps {cljfmt {:mvn/version "0.9.2"}}}' -m cljfmt.main fix
 
       - uses: stefanzweifel/git-auto-commit-action@v4
+        commit_message: format clojure code using cljfmt
